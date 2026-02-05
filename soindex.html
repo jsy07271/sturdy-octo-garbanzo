@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>소도몰 광주태전점 - 잡채용 고기</title>
+
+  <!-- Swiper (슬라이드용 CDN) -->
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+  />
+
+  <style>
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Noto Sans KR",
+        sans-serif;
+      background: #f5f5f5;
+      color: #111;
+    }
+
+    .container {
+      max-width: 420px;
+      margin: 0 auto;
+      background: #fff;
+    }
+
+    /* 상단 타이틀 */
+    .title {
+      position: relative;
+      background: #1f2a8a;
+      color: #fff;
+      padding: 20px;
+    }
+
+    .title h1 {
+      margin: 0;
+      font-size: 28px;
+      font-weight: 900;
+      letter-spacing: -0.5px;
+    }
+
+    .store {
+      position: absolute;
+      top: 12px;
+      left: 12px;
+      font-weight: 900;
+      font-size: 14px;
+      background: rgba(0, 0, 0, 0.4);
+      padding: 6px 10px;
+      border-radius: 6px;
+    }
+
+    /* 슬라이드 */
+    .swiper {
+      width: 100%;
+      height: auto;
+    }
+
+    .swiper-slide img {
+      width: 100%;
+      display: block;
+    }
+
+    /* 내용 영역 */
+    .content {
+      padding: 20px;
+    }
+
+    .content p {
+      line-height: 1.6;
+      margin: 0 0 10px;
+      font-size: 15px;
+    }
+
+    .price {
+      margin: 16px 0;
+      font-size: 22px;
+      font-weight: 900;
+      color: #e60012;
+    }
+
+    .info {
+      font-size: 14px;
+      color: #444;
+      line-height: 1.6;
+    }
+
+    .badge {
+      display: inline-block;
+      border: 2px solid #1f2a8a;
+      color: #1f2a8a;
+      border-radius: 999px;
+      padding: 6px 14px;
+      font-weight: 700;
+      font-size: 14px;
+      margin: 4px 0;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <!-- 타이틀 -->
+    <div class="title">
+      <div class="store">광주태전점</div>
+      <h1>잡채용 고기</h1>
+    </div>
+
+    <!-- 이미지 슬라이드 -->
+    <div class="swiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <img src="KakaoTalk_20260204_192330965.png" alt="잡채용 고기" />
+        </div>
+        <div class="swiper-slide">
+          <img src="KakaoTalk_20260204_192341551.png" alt="연출 이미지" />
+        </div>
+        <div class="swiper-slide">
+          <img src="KakaoTalk_20260204_192341551_01.png" alt="연출 이미지" />
+        </div>
+        <div class="swiper-slide">
+          <img src="KakaoTalk_20260204_192341551_02.png" alt="연출 이미지" />
+        </div>
+        <div class="swiper-slide">
+          <img src="KakaoTalk_20260204_192341551_03.png" alt="연출 이미지" />
+        </div>
+        <div class="swiper-slide">
+          <img src="KakaoTalk_20260204_192341551_04.jpg" alt="연출 이미지" />
+        </div>
+        <div class="swiper-slide">
+          <img src="KakaoTalk_20260204_192341551_05.png" alt="포장 예시" />
+        </div>
+      </div>
+
+      <!-- 페이지네이션 -->
+      <div class="swiper-pagination"></div>
+    </div>
+
+    <!-- 내용 -->
+    <div class="content">
+      <p><strong>&lt;소도몰 × 잡채용 고기&gt;</strong></p>
+
+      <p>
+        이번 잡채 공구와 함께,<br />
+        국내산 잡채용 돼지고기도 준비했어요 😊
+      </p>
+
+      <p>
+        잡채에 넣자마자 잡내 없이 부드럽고,<br />
+        채 썰려 있어 따로 손질할 필요 없어요.
+      </p>
+
+      <p>
+        ✔ 잡채 · 잡채밥<br />
+        ✔ 고추잡채 · 꽃빵 속<br />
+        ✔ 볶음밥 · 덮밥
+      </p>
+
+      <div class="badge">잡채 전용 손질</div><br />
+      <div class="badge">등심 100% 사용</div><br />
+      <div class="badge">먹기 좋은 채썰기</div>
+
+      <div class="price">5,900원 (300g)</div>
+
+      <div class="info">
+        소비기한 : 27.01.25<br />
+        입고 예정일 : 02/13 (금)<br />
+        보관방법 : 냉동
+      </div>
+    </div>
+  </div>
+
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script>
+    new Swiper(".swiper", {
+      loop: true,
+      pagination: {
+        el: ".swiper-pagination",
+      },
+    });
+  </script>
+</body>
+</html>
